@@ -16,3 +16,9 @@ For example:
 ```console
 cf push redirect -b https://github.com/cloudfoundry/nginx-buildpack.git -m 32M
 ```
+
+Or with the [`manifest.yml`](manifest.yml):
+
+```console
+cf push
+```

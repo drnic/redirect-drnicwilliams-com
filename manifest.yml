@@ -1,0 +1,11 @@
+applications:
+- name: redirect
+  buildpacks:
+  - https://github.com/cloudfoundry/nginx-buildpack.git
+  disk_quota: 1G
+  instances: 1
+  memory: 32M
+  routes:
+  - route: drnicwilliams.com
+  - route: www.drnicwilliams.com
+  stack: cflinuxfs2
